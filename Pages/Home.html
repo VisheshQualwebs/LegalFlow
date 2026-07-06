@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LegalFlow - Home</title>
+
+    <link rel="icon" type="image/png" href="image/logo.png">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-gray-100">
+
+    <nav class="bg-black text-white shadow-lg">
+        <div class="max-w-7xl mx-auto flex items-center justify-between px-8 py-4">
+
+            <h1 class="text-3xl font-bold">
+                LegalFlow
+            </h1>
+
+            <ul class="flex gap-8 font-medium">
+                <li><a href="Home.html" class="hover:text-gray-400">Home</a></li>
+                <li><a href="Clients.html" class="hover:text-gray-400">Clients</a></li>
+                <li><a href="Cases.html" class="hover:text-gray-400">Cases</a></li>
+                <li><a href="Documents.html" class="hover:text-gray-400">Documents</a></li>
+                <li><a href="Profile.html" class="hover:text-gray-400">Profile</a></li>
+            </ul>
+
+            <a href="Login.html" class="bg-white text-black px-5 py-2 rounded-lg font-semibold hover:bg-gray-200">
+                Logout
+            </a>
+
+        </div>
+    </nav>
+
+    <div class="max-w-7xl mx-auto px-8 mt-10">
+
+        <h2 class="text-4xl font-bold">
+            Welcome, Advocate 👋
+        </h2>
+
+        <p class="text-gray-600 mt-2">
+            Here's an overview of your legal practice.
+        </p>
+
+    </div>
+
+    <div class="max-w-7xl mx-auto grid grid-cols-4 gap-6 px-8 mt-8">
+
+        <div class="bg-white rounded-xl shadow-lg p-6 text-center">
+            <h3 class="text-lg font-semibold text-gray-600">Clients</h3>
+            <p class="text-4xl font-bold mt-4">120</p>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-lg p-6 text-center">
+            <h3 class="text-lg font-semibold text-gray-600">Cases</h3>
+            <p class="text-4xl font-bold mt-4">45</p>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-lg p-6 text-center">
+            <h3 class="text-lg font-semibold text-gray-600">Documents</h3>
+            <p class="text-4xl font-bold mt-4">310</p>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-lg p-6 text-center">
+            <h3 class="text-lg font-semibold text-gray-600">Appointments</h3>
+            <p class="text-4xl font-bold mt-4">8</p>
+        </div>
+
+    </div>
+
+    <div class="max-w-7xl mx-auto px-8 mt-10">
+
+        <div class="bg-white rounded-xl shadow-lg p-6">
+
+            <h2 class="text-2xl font-bold mb-5">
+                Recent Cases
+            </h2>
+
+            <table class="w-full text-left border-collapse">
+
+                <thead>
+
+                    <tr class="border-b">
+
+                        <th class="py-3">Case ID</th>
+                        <th>Client</th>
+                        <th>Case Type</th>
+                        <th>Status</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr class="border-b hover:bg-gray-100">
+
+                        <td class="py-3">C101</td>
+                        <td>Rahul Sharma</td>
+                        <td>Civil</td>
+                        <td class="text-green-600 font-semibold">Active</td>
+
+                    </tr>
+
+                    <tr class="border-b hover:bg-gray-100">
+
+                        <td class="py-3">C102</td>
+                        <td>Priya Patel</td>
+                        <td>Property</td>
+                        <td class="text-yellow-600 font-semibold">Pending</td>
+
+                    </tr>
+
+                    <tr class="hover:bg-gray-100">
+
+                        <td class="py-3">C103</td>
+                        <td>Vishesh Soni</td>
+                        <td>Criminal</td>
+                        <td class="text-red-600 font-semibold">Closed</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <div class="max-w-7xl mx-auto px-8 mt-10 mb-10">
+
+        <div class="bg-white rounded-xl shadow-lg p-6">
+
+            <h2 class="text-2xl font-bold mb-5">
+                Upcoming Appointments
+            </h2>
+
+            <div class="space-y-4">
+
+                <div class="flex justify-between border-b pb-2">
+                    <span>Rahul Sharma</span>
+                    <span>10:00 AM</span>
+                </div>
+
+                <div class="flex justify-between border-b pb-2">
+                    <span>Priya Patel</span>
+                    <span>12:30 PM</span>
+                </div>
+
+                <div class="flex justify-between">
+                    <span>Vishesh Soni</span>
+                    <span>03:00 PM</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <footer class="bg-black text-white py-6">
+
+        <div class="text-center">
+            © 2025 LegalFlow. All Rights Reserved.
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LegalFlow - Clients</title>
+
+    <link rel="icon" type="image/png" href="image/logo.png">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="bg-black text-white shadow-lg">
+        <div class="max-w-7xl mx-auto flex items-center justify-between px-8 py-4">
+
+            <h1 class="text-3xl font-bold">LegalFlow</h1>
+
+            <ul class="flex gap-8 font-medium">
+                <li><a href="Home.html" class="hover:text-gray-400">Home</a></li>
+                <li><a href="Clients.html" class="text-gray-300">Clients</a></li>
+                <li><a href="Cases.html" class="hover:text-gray-400">Cases</a></li>
+                <li><a href="Documents.html" class="hover:text-gray-400">Documents</a></li>
+                <li><a href="Profile.html" class="hover:text-gray-400">Profile</a></li>
+            </ul>
+
+            <a href="Login.html"
+                class="bg-white text-black px-5 py-2 rounded-lg font-semibold hover:bg-gray-200">
+                Logout
+            </a>
+
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="max-w-7xl mx-auto px-8 mt-10 flex justify-between items-center">
+
+        <h2 class="text-4xl font-bold">Clients</h2>
+
+        <a href="AddClient.html"
+            class="bg-black text-white px-5 py-3 rounded-lg hover:bg-gray-800">
+            + Add Client
+        </a>
+
+    </div>
+
+    <!-- Search -->
+    <div class="max-w-7xl mx-auto px-8 mt-6">
+
+        <input
+            type="text"
+            placeholder="Search client..."
+            class="w-full p-3 rounded-lg border border-gray-400 bg-white focus:outline-none focus:ring-2 focus:ring-black">
+
+    </div>
+
+    <!-- Clients Table -->
+    <div class="max-w-7xl mx-auto px-8 mt-8 mb-10">
+
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+
+            <table class="w-full">
+
+                <thead class="bg-black text-white">
+
+                    <tr>
+                        <th class="p-4 text-left">Client ID</th>
+                        <th class="p-4 text-left">Name</th>
+                        <th class="p-4 text-left">Phone</th>
+                        <th class="p-4 text-left">Email</th>
+                        <th class="p-4 text-center">Actions</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr class="border-b hover:bg-gray-100">
+
+                        <td class="p-4">CL001</td>
+                        <td class="p-4">Rahul Sharma</td>
+                        <td class="p-4">9876543210</td>
+                        <td class="p-4">rahul@gmail.com</td>
+
+                        <td class="p-4 text-center space-x-2">
+
+                            <button class="bg-gray-700 text-white px-3 py-1 rounded hover:bg-black">
+                                View
+                            </button>
+
+                            <button class="bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700">
+                                Edit
+                            </button>
+
+                            <button class="bg-red-600 text-white px-3 py-1 rounded hover:bg-red-700">
+                                Delete
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                    <tr class="border-b hover:bg-gray-100">
+
+                        <td class="p-4">CL002</td>
+                        <td class="p-4">Priya Patel</td>
+                        <td class="p-4">9876501234</td>
+                        <td class="p-4">priya@gmail.com</td>
+
+                        <td class="p-4 text-center space-x-2">
+
+                            <button class="bg-gray-700 text-white px-3 py-1 rounded hover:bg-black">
+                                View
+                            </button>
+
+                            <button class="bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700">
+                                Edit
+                            </button>
+
+                            <button class="bg-red-600 text-white px-3 py-1 rounded hover:bg-red-700">
+                                Delete
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                    <tr class="hover:bg-gray-100">
+
+                        <td class="p-4">CL003</td>
+                        <td class="p-4">Arjun Kumar</td>
+                        <td class="p-4">9876512345</td>
+                        <td class="p-4">arjun@gmail.com</td>
+
+                        <td class="p-4 text-center space-x-2">
+
+                            <button class="bg-gray-700 text-white px-3 py-1 rounded hover:bg-black">
+                                View
+                            </button>
+
+                            <button class="bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700">
+                                Edit
+                            </button>
+
+                            <button class="bg-red-600 text-white px-3 py-1 rounded hover:bg-red-700">
+                                Delete
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -46,34 +46,38 @@
                     Welcome back! Please enter your login credentials
                 </p>
 
-                <input type="email" placeholder="Email"
-                    class="w-full bg-transparent border border-gray-500 rounded-lg py-4 px-5 mb-5 text-white placeholder:text-gray-500 focus:outline-none focus:border-white">
+                <form action="Home.html">
 
-                <input type="password" placeholder="Password"
-                    class="w-full bg-transparent border border-gray-500 rounded-lg py-4 px-5 mb-5 text-white placeholder:text-gray-500 focus:outline-none focus:border-white">
+                    <input type="email" placeholder="Email" required
+                        class="w-full bg-transparent border border-gray-500 rounded-lg py-4 px-5 mb-5 text-white placeholder:text-gray-500 focus:outline-none focus:border-white">
 
+                    <input type="password" placeholder="Password" required
+                        class="w-full bg-transparent border border-gray-500 rounded-lg py-4 px-5 mb-5 text-white placeholder:text-gray-500 focus:outline-none focus:border-white">
 
-                <div class="flex justify-between items-center mb-8">
+                    <div class="flex justify-between items-center mb-8">
 
-                    <label class="flex items-center gap-2 text-sm text-gray-300">
-                        <input type="checkbox" class="accent-white">
-                        Remember me
-                    </label>
+                        <label class="flex items-center gap-2 text-sm text-gray-300">
+                            <input type="checkbox" class="accent-white">
+                            Remember me
+                        </label>
 
-                    <a href="#" class="text-sm text-gray-300 hover:text-white underline">
-                        Forgot Password?
-                    </a>
+                        <a href="#" class="text-sm text-gray-300 hover:text-white underline">
+                            Forgot Password?
+                        </a>
 
-                </div>
+                    </div>
 
-                <button class="w-full bg-white text-black font-semibold py-4 rounded-lg hover:bg-gray-300 transition">
-                    Login
-                </button>
+                    <button type="submit"
+                        class="w-full bg-white text-black font-semibold py-4 rounded-lg hover:bg-gray-300 transition">
+                        Login
+                    </button>
 
-                <button
+                </form>
+
+                <button type="button"
                     class="w-full border border-gray-500 rounded-lg py-4 mt-6 flex items-center justify-center gap-3 hover:bg-gray-900 transition">
 
-                    <img src="image/google.png" class="w-6">
+                    <img src="image/google.png" class="w-6" alt="Google">
 
                     <span>Sign in with Google</span>
 
