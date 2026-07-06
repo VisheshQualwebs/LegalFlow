@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LegalFlow - Appointments</title>
+
+    <link rel="icon" type="image/png" href="image/logo.png">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="bg-black text-white shadow-lg">
+        <div class="max-w-7xl mx-auto flex justify-between items-center px-8 py-4">
+
+            <h1 class="text-3xl font-bold">LegalFlow</h1>
+
+            <ul class="flex gap-8">
+                <li><a href="Home.html" class="hover:text-gray-400">Home</a></li>
+                <li><a href="Clients.html" class="hover:text-gray-400">Clients</a></li>
+                <li><a href="Cases.html" class="hover:text-gray-400">Cases</a></li>
+                <li><a href="Documents.html" class="hover:text-gray-400">Documents</a></li>
+                <li><a href="Appointments.html" class="text-gray-300">Appointments</a></li>
+                <li><a href="Profile.html" class="hover:text-gray-400">Profile</a></li>
+            </ul>
+
+            <a href="Login.html"
+                class="bg-white text-black px-5 py-2 rounded-lg font-semibold hover:bg-gray-200">
+                Logout
+            </a>
+
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <div class="max-w-7xl mx-auto px-8 mt-10 flex justify-between items-center">
+
+        <h2 class="text-4xl font-bold">
+            Appointments
+        </h2>
+
+        <a href="AddAppointment.html"
+            class="bg-black text-white px-5 py-3 rounded-lg hover:bg-gray-800">
+            + Schedule Appointment
+        </a>
+
+    </div>
+
+    <!-- Search -->
+    <div class="max-w-7xl mx-auto px-8 mt-6">
+
+        <input
+            type="text"
+            placeholder="Search appointments..."
+            class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-black">
+
+    </div>
+
+    <!-- Table -->
+    <div class="max-w-7xl mx-auto px-8 mt-8 mb-10">
+
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+
+            <table class="w-full">
+
+                <thead class="bg-black text-white">
+
+                    <tr>
+                        <th class="p-4 text-left">Appointment ID</th>
+                        <th class="p-4 text-left">Client</th>
+                        <th class="p-4 text-left">Case ID</th>
+                        <th class="p-4 text-left">Date</th>
+                        <th class="p-4 text-left">Time</th>
+                        <th class="p-4 text-left">Status</th>
+                        <th class="p-4 text-center">Actions</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr class="border-b hover:bg-gray-100">
+
+                        <td class="p-4">A001</td>
+                        <td class="p-4">Rahul Sharma</td>
+                        <td class="p-4">C001</td>
+                        <td class="p-4">20-06-2025</td>
+                        <td class="p-4">10:00 AM</td>
+                        <td class="p-4">
+                            <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full">
+                                Confirmed
+                            </span>
+                        </td>
+
+                        <td class="text-center space-x-2">
+
+                            <button class="bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700">
+                                Edit
+                            </button>
+
+                            <button class="bg-red-600 text-white px-3 py-1 rounded hover:bg-red-700">
+                                Cancel
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                    <tr class="border-b hover:bg-gray-100">
+
+                        <td class="p-4">A002</td>
+                        <td class="p-4">Priya Patel</td>
+                        <td class="p-4">C002</td>
+                        <td class="p-4">22-06-2025</td>
+                        <td class="p-4">12:30 PM</td>
+                        <td class="p-4">
+                            <span class="bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full">
+                                Pending
+                            </span>
+                        </td>
+
+                        <td class="text-center space-x-2">
+
+                            <button class="bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700">
+                                Edit
+                            </button>
+
+                            <button class="bg-red-600 text-white px-3 py-1 rounded hover:bg-red-700">
+                                Cancel
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

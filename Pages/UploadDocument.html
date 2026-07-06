@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LegalFlow - Upload Document</title>
+
+    <link rel="icon" type="image/png" href="image/logo.png">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-gray-100">
+
+    <nav class="bg-black text-white shadow-lg">
+        <div class="max-w-7xl mx-auto flex justify-between items-center px-8 py-4">
+
+            <h1 class="text-3xl font-bold">LegalFlow</h1>
+
+            <ul class="flex gap-8">
+                <li><a href="Home.html" class="hover:text-gray-400">Home</a></li>
+                <li><a href="Clients.html" class="hover:text-gray-400">Clients</a></li>
+                <li><a href="Cases.html" class="hover:text-gray-400">Cases</a></li>
+                <li><a href="Documents.html" class="text-gray-300">Documents</a></li>
+                <li><a href="Profile.html" class="hover:text-gray-400">Profile</a></li>
+            </ul>
+
+            <a href="Login.html"
+                class="bg-white text-black px-5 py-2 rounded-lg font-semibold hover:bg-gray-200">
+                Logout
+            </a>
+
+        </div>
+    </nav>
+
+    <div class="max-w-4xl mx-auto mt-10 mb-10">
+
+        <div class="bg-white rounded-xl shadow-lg p-8">
+
+            <h2 class="text-3xl font-bold text-center mb-8">
+                Upload Document
+            </h2>
+
+            <form action="Documents.html">
+
+                <div class="grid grid-cols-2 gap-6">
+
+                    <div>
+                        <label class="font-semibold">Document ID</label>
+                        <input type="text"
+                            class="w-full mt-2 border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-black"
+                            required>
+                    </div>
+
+                    <div>
+                        <label class="font-semibold">Document Name</label>
+                        <input type="text"
+                            class="w-full mt-2 border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-black"
+                            required>
+                    </div>
+
+                    <div>
+                        <label class="font-semibold">Client</label>
+                        <select
+                            class="w-full mt-2 border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-black">
+                            <option>Select Client</option>
+                            <option>Rahul Sharma</option>
+                            <option>Priya Patel</option>
+                            <option>Arjun Kumar</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="font-semibold">Case ID</label>
+                        <select
+                            class="w-full mt-2 border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-black">
+                            <option>Select Case</option>
+                            <option>C001</option>
+                            <option>C002</option>
+                            <option>C003</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="font-semibold">Document Type</label>
+                        <select
+                            class="w-full mt-2 border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-black">
+                            <option>Select Type</option>
+                            <option>PDF</option>
+                            <option>DOCX</option>
+                            <option>Image</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="font-semibold">Upload File</label>
+                        <input type="file"
+                            class="w-full mt-2 border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-black">
+                    </div>
+
+                    <div class="col-span-2">
+                        <label class="font-semibold">Description</label>
+                        <textarea rows="5"
+                            class="w-full mt-2 border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-black"
+                            placeholder="Enter document description..."></textarea>
+                    </div>
+
+                </div>
+
+                <div class="flex justify-end gap-4 mt-8">
+
+                    <a href="Documents.html"
+                        class="bg-gray-300 px-6 py-3 rounded-lg hover:bg-gray-400">
+                        Cancel
+                    </a>
+
+                    <button type="submit"
+                        class="bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800">
+                        Upload Document
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

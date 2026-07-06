@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LegalFlow - Add Case</title>
+
+    <link rel="icon" type="image/png" href="image/logo.png">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-gray-100">
+
+    <nav class="bg-black text-white shadow-lg">
+        <div class="max-w-7xl mx-auto flex justify-between items-center px-8 py-4">
+
+            <h1 class="text-3xl font-bold">LegalFlow</h1>
+
+            <ul class="flex gap-8">
+                <li><a href="Home.html" class="hover:text-gray-400">Home</a></li>
+                <li><a href="Clients.html" class="hover:text-gray-400">Clients</a></li>
+                <li><a href="Cases.html" class="text-gray-300">Cases</a></li>
+                <li><a href="Documents.html" class="hover:text-gray-400">Documents</a></li>
+                <li><a href="Profile.html" class="hover:text-gray-400">Profile</a></li>
+            </ul>
+
+            <a href="Login.html"
+                class="bg-white text-black px-5 py-2 rounded-lg font-semibold hover:bg-gray-200">
+                Logout
+            </a>
+
+        </div>
+    </nav>
+
+    <div class="max-w-5xl mx-auto mt-10 mb-10">
+
+        <div class="bg-white rounded-xl shadow-lg p-8">
+
+            <h2 class="text-3xl font-bold text-center mb-8">
+                Add New Case
+            </h2>
+
+            <form action="Cases.html">
+
+                <div class="grid grid-cols-2 gap-6">
+
+                    <div>
+                        <label class="font-semibold">Case ID</label>
+                        <input type="text" required
+                            class="w-full mt-2 border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-black">
+                    </div>
+
+                    <div>
+                        <label class="font-semibold">Client Name</label>
+                        <select
+                            class="w-full mt-2 border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-black">
+                            <option>Select Client</option>
+                            <option>Rahul Sharma</option>
+                            <option>Priya Patel</option>
+                            <option>Arjun Kumar</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="font-semibold">Case Title</label>
+                        <input type="text" required
+                            class="w-full mt-2 border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-black">
+                    </div>
+
+                    <div>
+                        <label class="font-semibold">Case Type</label>
+                        <select
+                            class="w-full mt-2 border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-black">
+                            <option>Select Type</option>
+                            <option>Civil</option>
+                            <option>Criminal</option>
+                            <option>Property</option>
+                            <option>Family</option>
+                            <option>Corporate</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="font-semibold">Court Name</label>
+                        <input type="text"
+                            class="w-full mt-2 border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-black">
+                    </div>
+
+                    <div>
+                        <label class="font-semibold">Filing Date</label>
+                        <input type="date"
+                            class="w-full mt-2 border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-black">
+                    </div>
+
+                    <div>
+                        <label class="font-semibold">Next Hearing</label>
+                        <input type="date"
+                            class="w-full mt-2 border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-black">
+                    </div>
+
+                    <div>
+                        <label class="font-semibold">Status</label>
+                        <select
+                            class="w-full mt-2 border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-black">
+                            <option>Active</option>
+                            <option>Pending</option>
+                            <option>Closed</option>
+                        </select>
+                    </div>
+
+                    <div class="col-span-2">
+                        <label class="font-semibold">Case Description</label>
+                        <textarea rows="5"
+                            class="w-full mt-2 border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-black"
+                            placeholder="Enter case details..."></textarea>
+                    </div>
+
+                </div>
+
+                <div class="flex justify-end gap-4 mt-8">
+
+                    <a href="Cases.html"
+                        class="bg-gray-300 px-6 py-3 rounded-lg hover:bg-gray-400">
+                        Cancel
+                    </a>
+
+                    <button type="submit"
+                        class="bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800">
+                        Save Case
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

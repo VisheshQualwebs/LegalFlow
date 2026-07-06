@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LegalFlow - Profile</title>
+
+    <link rel="icon" type="image/png" href="image/logo.png">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="bg-black text-white shadow-lg">
+        <div class="max-w-7xl mx-auto flex justify-between items-center px-8 py-4">
+
+            <h1 class="text-3xl font-bold">LegalFlow</h1>
+
+            <ul class="flex gap-8">
+                <li><a href="Home.html" class="hover:text-gray-400">Home</a></li>
+                <li><a href="Clients.html" class="hover:text-gray-400">Clients</a></li>
+                <li><a href="Cases.html" class="hover:text-gray-400">Cases</a></li>
+                <li><a href="Documents.html" class="hover:text-gray-400">Documents</a></li>
+                <li><a href="Profile.html" class="text-gray-300">Profile</a></li>
+            </ul>
+
+            <a href="Login.html"
+                class="bg-white text-black px-5 py-2 rounded-lg font-semibold hover:bg-gray-200">
+                Logout
+            </a>
+
+        </div>
+    </nav>
+
+    <!-- Profile Card -->
+    <div class="max-w-5xl mx-auto mt-10 mb-10">
+
+        <div class="bg-white rounded-xl shadow-lg p-10">
+
+            <h2 class="text-3xl font-bold text-center mb-8">
+                Lawyer Profile
+            </h2>
+
+            <div class="flex flex-col items-center mb-8">
+
+                <img src="image/profile.png"
+                    alt="Profile"
+                    class="w-36 h-36 rounded-full border-4 border-black object-cover">
+
+                <button
+                    class="mt-4 bg-black text-white px-5 py-2 rounded-lg hover:bg-gray-800">
+                    Change Photo
+                </button>
+
+            </div>
+
+            <form action="Profile.html">
+
+                <div class="grid grid-cols-2 gap-6">
+
+                    <div>
+                        <label class="font-semibold">Full Name</label>
+                        <input type="text" value="Adv. John Doe"
+                            class="w-full mt-2 border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-black">
+                    </div>
+
+                    <div>
+                        <label class="font-semibold">Email</label>
+                        <input type="email" value="john@gmail.com"
+                            class="w-full mt-2 border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-black">
+                    </div>
+
+                    <div>
+                        <label class="font-semibold">Phone Number</label>
+                        <input type="tel" value="9876543210"
+                            class="w-full mt-2 border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-black">
+                    </div>
+
+                    <div>
+                        <label class="font-semibold">Bar Council ID</label>
+                        <input type="text" value="BCI123456"
+                            class="w-full mt-2 border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-black">
+                    </div>
+
+                    <div>
+                        <label class="font-semibold">Specialization</label>
+                        <input type="text" value="Civil Law"
+                            class="w-full mt-2 border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-black">
+                    </div>
+
+                    <div>
+                        <label class="font-semibold">Experience</label>
+                        <input type="text" value="8 Years"
+                            class="w-full mt-2 border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-black">
+                    </div>
+
+                    <div class="col-span-2">
+                        <label class="font-semibold">Office Address</label>
+                        <textarea rows="4"
+                            class="w-full mt-2 border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-black">123, MG Road, Chennai, Tamil Nadu</textarea>
+                    </div>
+
+                </div>
+
+                <div class="flex justify-end mt-8">
+
+                    <button type="submit"
+                        class="bg-black text-white px-8 py-3 rounded-lg hover:bg-gray-800">
+                        Update Profile
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
