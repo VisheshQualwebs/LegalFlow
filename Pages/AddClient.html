@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LegalFlow - Add Client</title>
-
-    <link rel="icon" type="image/png" href="image/logo.png">
+    <link rel="icon" type="image/png" href="../assets/image/logo.png">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
@@ -25,78 +24,73 @@
                 <li><a href="Profile.html" class="hover:text-gray-400">Profile</a></li>
             </ul>
 
-            <a href="Login.html"
-                class="bg-white text-black px-5 py-2 rounded-lg font-semibold hover:bg-gray-200">
+            <a id="logoutButton" href="#" class="bg-white text-black px-5 py-2 rounded-lg font-semibold hover:bg-gray-200">
                 Logout
             </a>
 
         </div>
     </nav>
 
-    <!-- Form -->
     <div class="max-w-4xl mx-auto mt-10 mb-10">
 
         <div class="bg-white rounded-xl shadow-lg p-8">
-
             <h2 class="text-3xl font-bold mb-8 text-center">
                 Add New Client
             </h2>
 
-            <form action="Clients.html">
-
+            <form id="clientForm">
                 <div class="grid grid-cols-2 gap-6">
-
                     <div>
                         <label class="font-semibold">Full Name</label>
-                        <input type="text" required
+                        <input type="text" required id="fullName"
                             class="w-full mt-2 border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-black">
                     </div>
 
                     <div>
                         <label class="font-semibold">Phone Number</label>
-                        <input type="tel" required
+                        <input type="tel" required id="phone"
                             class="w-full mt-2 border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-black">
                     </div>
 
                     <div>
                         <label class="font-semibold">Email</label>
-                        <input type="email" required
+                        <input type="email" required id="email"
                             class="w-full mt-2 border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-black">
                     </div>
 
                     <div>
                         <label class="font-semibold">Occupation</label>
-                        <input type="text"
+                        <input type="text" id="occupation"
                             class="w-full mt-2 border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-black">
                     </div>
 
                     <div class="col-span-2">
                         <label class="font-semibold">Address</label>
-                        <textarea rows="3"
+                        <textarea rows="3" id="address"
                             class="w-full mt-2 border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-black"></textarea>
                     </div>
 
                     <div>
                         <label class="font-semibold">City</label>
-                        <input type="text"
+                        <input type="text" id="city"
                             class="w-full mt-2 border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-black">
                     </div>
 
                     <div>
                         <label class="font-semibold">State</label>
-                        <input type="text"
+                        <input type="text" id="state"
                             class="w-full mt-2 border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-black">
                     </div>
 
                     <div>
                         <label class="font-semibold">PIN Code</label>
-                        <input type="text"
+                        <input type="text" id="pinCode"
                             class="w-full mt-2 border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-black">
                     </div>
 
                     <div>
                         <label class="font-semibold">Gender</label>
-                        <select
+                        <select id="gender"
                             class="w-full mt-2 border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-black">
                             <option>Select</option>
                             <option>Male</option>
@@ -104,11 +98,9 @@
                             <option>Other</option>
                         </select>
                     </div>
-
                 </div>
 
                 <div class="flex justify-end gap-4 mt-10">
-
                     <a href="Clients.html"
                         class="bg-gray-300 px-6 py-3 rounded-lg hover:bg-gray-400">
                         Cancel
@@ -118,15 +110,12 @@
                         class="bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800">
                         Save Client
                     </button>
-
                 </div>
-
             </form>
-
         </div>
 
     </div>
-
+<script src="../assets/js/addClient.js"></script>
 </body>
 
 </html>
