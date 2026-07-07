@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LegalFlow - Add Case</title>
 
-    <link rel="icon" type="image/png" href="image/logo.png">
+    <link rel="icon" type="image/png" href="../assets/image/logo.png">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
@@ -14,7 +14,6 @@
 
     <nav class="bg-black text-white shadow-lg">
         <div class="max-w-7xl mx-auto flex justify-between items-center px-8 py-4">
-
             <h1 class="text-3xl font-bold">LegalFlow</h1>
 
             <ul class="flex gap-8">
@@ -25,7 +24,7 @@
                 <li><a href="Profile.html" class="hover:text-gray-400">Profile</a></li>
             </ul>
 
-            <a href="Login.html"
+            <a id="logoutButton" href="#"
                 class="bg-white text-black px-5 py-2 rounded-lg font-semibold hover:bg-gray-200">
                 Logout
             </a>
@@ -41,36 +40,33 @@
                 Add New Case
             </h2>
 
-            <form action="Cases.html">
+            <form id="caseForm">
 
                 <div class="grid grid-cols-2 gap-6">
 
                     <div>
                         <label class="font-semibold">Case ID</label>
-                        <input type="text" required
+                        <input type="text" required id="caseId" readonly
                             class="w-full mt-2 border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-black">
                     </div>
 
                     <div>
                         <label class="font-semibold">Client Name</label>
-                        <select
+                        <select id="clientName"
                             class="w-full mt-2 border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-black">
                             <option>Select Client</option>
-                            <option>Rahul Sharma</option>
-                            <option>Priya Patel</option>
-                            <option>Arjun Kumar</option>
                         </select>
                     </div>
 
                     <div>
                         <label class="font-semibold">Case Title</label>
-                        <input type="text" required
+                        <input type="text" required id="caseTitle"
                             class="w-full mt-2 border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-black">
                     </div>
 
                     <div>
                         <label class="font-semibold">Case Type</label>
-                        <select
+                        <select id="caseType"
                             class="w-full mt-2 border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-black">
                             <option>Select Type</option>
                             <option>Civil</option>
@@ -83,25 +79,25 @@
 
                     <div>
                         <label class="font-semibold">Court Name</label>
-                        <input type="text"
+                        <input type="text" id="court"
                             class="w-full mt-2 border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-black">
                     </div>
 
                     <div>
                         <label class="font-semibold">Filing Date</label>
-                        <input type="date"
+                        <input type="date" id="filing"
                             class="w-full mt-2 border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-black">
                     </div>
 
                     <div>
                         <label class="font-semibold">Next Hearing</label>
-                        <input type="date"
+                        <input type="date" id="hearing"
                             class="w-full mt-2 border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-black">
                     </div>
 
                     <div>
                         <label class="font-semibold">Status</label>
-                        <select
+                        <select id="status"
                             class="w-full mt-2 border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-black">
                             <option>Active</option>
                             <option>Pending</option>
@@ -111,7 +107,7 @@
 
                     <div class="col-span-2">
                         <label class="font-semibold">Case Description</label>
-                        <textarea rows="5"
+                        <textarea rows="5" id="description"
                             class="w-full mt-2 border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-black"
                             placeholder="Enter case details..."></textarea>
                     </div>
@@ -137,7 +133,7 @@
         </div>
 
     </div>
-
+<script src="../assets/js/addCases.js"></script>
 </body>
 
 </html>
