@@ -8,6 +8,10 @@ form.addEventListener("submit", function (e) {
     const password = document.getElementById("password").value.trim();
 
     if (email === "dev@qualwebs.co" && password === "dev@1234") {
+        const developer = {
+            fullName: "Developer"
+        };
+        localStorage.setItem("loggedInUser", JSON.stringify(developer));
         alert("Developer Login Successful!");
         window.location.href = "Pages/Home.html";
         return;
@@ -20,6 +24,7 @@ form.addEventListener("submit", function (e) {
     );
 
     if (foundUser) {
+        localStorage.setItem("loggedInUser", JSON.stringify(foundUser));
         alert("Login Successful!");
         window.location.href = "Pages/Home.html";
     } else {
