@@ -4,89 +4,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LegalFlow</title>
-    <link rel="icon" type="image/png" href="image/logo.png">
+    <title>LegalFlow - Sign Up</title>
+    <link rel="icon" type="image/png" href="../assets/image/logo.png">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
 </head>
 
-<body class="bg-gray-200 min-h-screen flex items-center justify-center">
+<body class="bg-gray-200 min-h-screen flex items-center justify-center p-5">
 
-    <div class="w-[1200px] h-[750px] rounded-[30px] overflow-hidden shadow-2xl border border-gray-400 grid grid-cols-2">
+    <div
+        class="w-full max-w-7xl min-h-[700px] bg-white rounded-3xl overflow-hidden shadow-2xl grid grid-cols-1 lg:grid-cols-2">
 
-        <div class="bg-white flex flex-col items-center justify-center px-16">
+        <div class="hidden lg:flex flex-col items-center justify-center bg-white px-16">
 
-            <img src="image/left-side.jpeg" class="w-96 mb-8" alt="Illustration">
+            <img src="../assets/image/left-side.jpeg" alt="Illustration" class="w-full max-w-md mb-8">
 
-            <h1 class="text-5xl font-bold text-black mb-6">
+            <h1 class="text-5xl font-bold mb-6">
                 Welcome!
             </h1>
 
             <p class="text-center text-gray-600 text-lg leading-8 max-w-md">
                 Optimize legal operations with our comprehensive platform,
-                empowering you to automate document creation, efficiently
-                manage contracts, and mitigate risk, all in one streamlined
-                solution.
+                empowering you to automate document creation,
+                efficiently manage contracts,
+                and mitigate risk,
+                all in one streamlined solution.
             </p>
 
         </div>
 
-        <div class="bg-black text-white flex items-center justify-center">
+        <div class="bg-black text-white flex justify-center items-center p-8">
 
-            <div class="w-[430px] py-6">
+            <div class="w-full max-w-md">
 
-                <h2 class="text-5xl font-bold text-center mb-5 mt-5">
+                <h2 class="text-5xl font-bold text-center mb-">
                     LegalFlow
                 </h2>
 
                 <h3 class="text-3xl font-semibold text-center mb-2">
-                    SignUp
+                    Sign Up
                 </h3>
 
-                <p class="text-center text-gray-400 mb-5">
-                    Welcome Please enter your details
+                <p class="text-center text-gray-400 mb-6">
+                    Create your account to get started.
                 </p>
 
-                <input type="name" placeholder="Full Name"
-                    class="w-full bg-transparent border border-gray-500 rounded-lg py-3 px-5 mb-5 text-white placeholder:text-gray-500 focus:outline-none focus:border-white">
+                <form id="signupform">
+                    <input id="name" type="text" placeholder="Full Name" required
+                        class="w-full bg-transparent border border-gray-500 rounded-lg py-3 px-5 mb-4 text-white placeholder:text-gray-500 focus:outline-none focus:border-white">
 
-                <input type="phone" placeholder="Phone Number"
-                    class="w-full bg-transparent border border-gray-500 rounded-lg py-3 px-5 mb-5 text-white placeholder:text-gray-500 focus:outline-none focus:border-white">
+                    <input id="phone" type="tel" placeholder="Phone Number" required
+                        class="w-full bg-transparent border border-gray-500 rounded-lg py-3 px-5 mb-4 text-white placeholder:text-gray-500 focus:outline-none focus:border-white">
 
-                <input type="email" placeholder="Email"
-                    class="w-full bg-transparent border border-gray-500 rounded-lg py-3 px-5 mb-5 text-white placeholder:text-gray-500 focus:outline-none focus:border-white">
+                    <input id="email" type="email" placeholder="Email" required
+                        class="w-full bg-transparent border border-gray-500 rounded-lg py-3 px-5 mb-4 text-white placeholder:text-gray-500 focus:outline-none focus:border-white">
 
-                <input type="password" placeholder="Password"
-                    class="w-full bg-transparent border border-gray-500 rounded-lg py-3 px-5 mb-5 text-white placeholder:text-gray-500 focus:outline-none focus:border-white">
+                    <div class="relative mb-4">
+                        <input id="password" type="password" placeholder="Password" required
+                            class="w-full bg-transparent border border-gray-500 rounded-lg py-3 px-5 pr-12 text-white placeholder:text-gray-500 focus:outline-none focus:border-white">
 
-                <input type="cpassword" placeholder="Confirm Password"
-                    class="w-full bg-transparent border border-gray-500 rounded-lg py-3 px-5 mb-5 text-white placeholder:text-gray-500 focus:outline-none focus:border-white">
+                        <button type="button" id="togglePassword"
+                            class="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-white">
+                            👁
+                        </button>
+                    </div>
+                    <input id="confirmPassword" type="password" placeholder="Confirm Password" required
+                        class="w-full bg-transparent border border-gray-500 rounded-lg py-3 px-5 mb-4 text-white placeholder:text-gray-500 focus:outline-none focus:border-white">
 
-                <button class="w-full bg-white text-black font-semibold py-3 rounded-lg hover:bg-gray-300 transition">
-                    Signup
-                </button>
+                    <button type="submit"
+                        class="w-full bg-white text-black font-semibold py-3 rounded-lg hover:bg-gray-300 transition">
+                        Create Account
+                    </button>
+                </form>
 
-                <button
+                <button type="button" id="googleLoginButton"
                     class="w-full border border-gray-500 rounded-lg py-3 mt-5 flex items-center justify-center gap-3 hover:bg-gray-900 transition">
-
-                    <img src="image/google.png" class="w-6">
-
-                    <span>Sign in with Google</span>
-
+                    <img src="../assets/image/google.png" class="w-6" alt="Google">
+                    <span>
+                        Sign Up with Google
+                    </span>
                 </button>
 
-                <p class="text-center mt-5 text-gray-400">
+                <p class="text-center mt-6 text-gray-400">
                     Already have an account?
-                    <a href="Login.html" class="text-white font-medium underline">
+                    <a href="../Login.html" class="text-white underline font-medium">
                         Login
                     </a>
                 </p>
-
             </div>
-
         </div>
-
     </div>
-
+    <script src="../assets/js/signup.js"></script>
 </body>
 
 </html>

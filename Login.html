@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LegalFlow</title>
+    <link rel="icon" type="image/png" href="assets/image/logo.png">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="bg-gray-200 min-h-screen flex items-center justify-center">
+
+    <div class="w-[1200px] h-[700px] rounded-[30px] overflow-hidden shadow-2xl border border-gray-400 grid grid-cols-2">
+
+        <div class="bg-white flex flex-col items-center justify-center px-16">
+
+            <img src="assets/image/left-side.jpeg" class="w-96 mb-8" alt="Illustration">
+
+            <h1 class="text-5xl font-bold text-black mb-6">
+                Welcome!
+            </h1>
+
+            <p class="text-center text-gray-600 text-lg leading-8 max-w-md">
+                Optimize legal operations with our comprehensive platform,
+                empowering you to automate document creation, efficiently
+                manage contracts, and mitigate risk, all in one streamlined
+                solution.
+            </p>
+
+        </div>
+
+        <div class="bg-black text-white flex items-center justify-center">
+
+            <div class="w-[430px]">
+
+                <h2 class="text-5xl font-bold text-center mb-12">
+                    LegalFlow
+                </h2>
+
+                <h3 class="text-3xl font-semibold text-center mb-2">
+                    Login
+                </h3>
+
+                <p class="text-center text-gray-400 mb-10">
+                    Welcome back! Please enter your login credentials
+                </p>
+
+                <form id="loginform">
+
+                    <input id="email" type="email" placeholder="Email" required
+                        class="w-full bg-transparent border border-gray-500 rounded-lg py-4 px-5 mb-5 text-white placeholder:text-gray-500 focus:outline-none focus:border-white">
+
+                    <div class="relative mb-4">
+                        <input id="password" type="password" placeholder="Password" required
+                            class="w-full bg-transparent border border-gray-500 rounded-lg py-3 px-5 pr-12 text-white placeholder:text-gray-500 focus:outline-none focus:border-white">
+                        <button type="button" id="togglePassword"
+                            class="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-white">
+                            👁
+                        </button>
+                    </div>
+                    <div class="flex justify-between items-center mb-8">
+                        <label class="flex items-center gap-2 text-sm text-gray-300">
+                            <input type="checkbox" class="accent-white">
+                            Remember me
+                        </label>
+                        <a href="#" class="text-sm text-gray-300 hover:text-white underline">
+                            Forgot Password?
+                        </a>
+                    </div>
+
+                    <button type="submit"
+                        class="w-full bg-white text-black font-semibold py-4 rounded-lg hover:bg-gray-300 transition">
+                        Login
+                    </button>
+
+                </form>
+
+                <button type="button" id="googleLoginButton"
+                    class="w-full border border-gray-500 rounded-lg py-4 mt-6 flex items-center justify-center gap-3 hover:bg-gray-900 transition">
+                    <img src="assets/image/google.png" class="w-6" alt="Google">
+                    <span>Sign in with Google</span>
+                </button>
+
+                <p class="text-center mt-8 text-gray-400">
+                    Don't have an account?
+                    <a href="Pages/Signup.html" class="text-white font-medium underline">
+                        Sign Up
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/login.js"></script>
+</body>
+
+</html>
