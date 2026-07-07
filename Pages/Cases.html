@@ -5,17 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LegalFlow - Cases</title>
-
-    <link rel="icon" type="image/png" href="image/logo.png">
+    <link rel="icon" type="image/png" href="../assets/image/logo.png">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body class="bg-gray-100">
 
-    <!-- Navbar -->
     <nav class="bg-black text-white shadow-lg">
         <div class="max-w-7xl mx-auto flex justify-between items-center px-8 py-4">
-
             <h1 class="text-3xl font-bold">LegalFlow</h1>
 
             <ul class="flex gap-8">
@@ -26,7 +23,7 @@
                 <li><a href="Profile.html" class="hover:text-gray-400">Profile</a></li>
             </ul>
 
-            <a href="Login.html"
+            <a id="logoutButton" href="#"
                 class="bg-white text-black px-5 py-2 rounded-lg font-semibold hover:bg-gray-200">
                 Logout
             </a>
@@ -34,7 +31,6 @@
         </div>
     </nav>
 
-    <!-- Heading -->
     <div class="max-w-7xl mx-auto px-8 mt-10 flex justify-between items-center">
 
         <h2 class="text-4xl font-bold">
@@ -48,25 +44,17 @@
 
     </div>
 
-    <!-- Search -->
     <div class="max-w-7xl mx-auto px-8 mt-6">
-
         <input
             type="text"
             placeholder="Search case..."
             class="w-full p-3 rounded-lg border border-gray-400 focus:outline-none focus:ring-2 focus:ring-black">
-
     </div>
 
-    <!-- Table -->
     <div class="max-w-7xl mx-auto px-8 mt-8 mb-10">
-
         <div class="bg-white rounded-xl shadow-lg overflow-hidden">
-
             <table class="w-full">
-
                 <thead class="bg-black text-white">
-
                     <tr>
                         <th class="p-4 text-left">Case ID</th>
                         <th class="p-4 text-left">Client</th>
@@ -76,115 +64,16 @@
                         <th class="p-4 text-center">Status</th>
                         <th class="p-4 text-center">Actions</th>
                     </tr>
-
                 </thead>
 
-                <tbody>
-
-                    <tr class="border-b hover:bg-gray-100">
-
-                        <td class="p-4">C001</td>
-                        <td class="p-4">Rahul Sharma</td>
-                        <td class="p-4">Civil</td>
-                        <td class="p-4">District Court</td>
-                        <td class="p-4">20-06-2025</td>
-
-                        <td class="text-center">
-                            <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm">
-                                Active
-                            </span>
-                        </td>
-
-                        <td class="text-center space-x-2">
-
-                            <button class="bg-gray-700 text-white px-3 py-1 rounded hover:bg-black">
-                                View
-                            </button>
-
-                            <button class="bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700">
-                                Edit
-                            </button>
-
-                            <button class="bg-red-600 text-white px-3 py-1 rounded hover:bg-red-700">
-                                Delete
-                            </button>
-
-                        </td>
-
-                    </tr>
-
-                    <tr class="border-b hover:bg-gray-100">
-
-                        <td class="p-4">C002</td>
-                        <td class="p-4">Priya Patel</td>
-                        <td class="p-4">Property</td>
-                        <td class="p-4">High Court</td>
-                        <td class="p-4">25-06-2025</td>
-
-                        <td class="text-center">
-                            <span class="bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-sm">
-                                Pending
-                            </span>
-                        </td>
-
-                        <td class="text-center space-x-2">
-
-                            <button class="bg-gray-700 text-white px-3 py-1 rounded hover:bg-black">
-                                View
-                            </button>
-
-                            <button class="bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700">
-                                Edit
-                            </button>
-
-                            <button class="bg-red-600 text-white px-3 py-1 rounded hover:bg-red-700">
-                                Delete
-                            </button>
-
-                        </td>
-
-                    </tr>
-
-                    <tr class="hover:bg-gray-100">
-
-                        <td class="p-4">C003</td>
-                        <td class="p-4">Arjun Kumar</td>
-                        <td class="p-4">Criminal</td>
-                        <td class="p-4">Sessions Court</td>
-                        <td class="p-4">30-06-2025</td>
-
-                        <td class="text-center">
-                            <span class="bg-red-100 text-red-700 px-3 py-1 rounded-full text-sm">
-                                Closed
-                            </span>
-                        </td>
-
-                        <td class="text-center space-x-2">
-
-                            <button class="bg-gray-700 text-white px-3 py-1 rounded hover:bg-black">
-                                View
-                            </button>
-
-                            <button class="bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700">
-                                Edit
-                            </button>
-
-                            <button class="bg-red-600 text-white px-3 py-1 rounded hover:bg-red-700">
-                                Delete
-                            </button>
-
-                        </td>
-
-                    </tr>
-
+                <tbody id="caseTableBody">
+                    
                 </tbody>
-
             </table>
-
         </div>
 
     </div>
-
+<script src="../assets/js/cases.js"></script>
 </body>
 
 </html>
