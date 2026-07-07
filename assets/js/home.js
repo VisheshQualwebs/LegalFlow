@@ -16,7 +16,9 @@ const welcomeText = document.getElementById("welcomeText");
 
 const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
 
-if (loggedInUser) {
+if (!loggedInUser) {
+    window.location.href = "../Login.html";
+} else if (loggedInUser) {
     welcomeText.textContent = `Welcome, ${loggedInUser.fullName} 👋`;
 } else {
     welcomeText.textContent = `Welcome, Guest 👋`;
